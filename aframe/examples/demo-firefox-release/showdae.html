@@ -19,27 +19,13 @@
 		<a-assets>
 			<a-asset-item id="model" src="models/dog/Model.dae"></a-asset-item>
 			<!--<img id="sky" src="https://img.gs/bbdkhfbzkk/2048x2048,stretch/http://i.imgur.com/WqlqEkq.jpg" crossorigin="anonymous" />-->
-		</a-assets>		
-		<!-- Create a anchor to attach your augmented reality -->
-		<a-anchor hit-testing-enabled='true'>
-			
-
-			<a-entity id="logo" rotation="0 45 0" scale='0.2 0.2 0.2'>
-				<a-entity collada-model="#model" position="0 0.2 0" scale="3 3 3"></a-entity>
-				<!--<a-entity rotation="0 0 90" position="0 0.2 0">
-					<a-collada-model src="#model" scale="3 3 3" visible="true">
-						<!--<a-animation attribute="position" from="0 10 0" to="0 0 0" delay="650" dur="800" easing="ease-out" fill="backwards"></a-animation>
-						<a-animation attribute="visible" to="true" delay="800" dur="1"></a-animation>
-					</a-collada-model>
-				</a-entity>-->				
-			</a-entity>
-			
+		</a-assets>				
+			<a-entity collada-model="#model" position="0 0.2 0" scale="3 3 3"></a-entity>			
 			<!--<a-sky src="#sky" rotation="0 -90 0" radius='50'></a-sky>-->
 		</a-entity>
-	</a-anchor>
 	
 	<!-- Define a static camera -->
-	<a-camera-static/>
+	<!--<a-camera-static/>-->
 	
 </a-scene>
 </body>
