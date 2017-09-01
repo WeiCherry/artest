@@ -13,11 +13,11 @@
 	<a-scene embedded arjs='trackingMethod: best;'>
 		
 		<a-assets>
-			<a-asset-item id="model" src="models/dog/Model.dae"></a-asset-item>
+			<a-asset-item id="model" src="models/dog/Model.gltf"></a-asset-item>
 			<!--<img id="sky" src="https://img.gs/bbdkhfbzkk/2048x2048,stretch/http://i.imgur.com/WqlqEkq.jpg" crossorigin="anonymous" />-->
 		</a-assets>
 		<a-anchor hit-testing-enabled='true'>				
-			<a-entity collada-model="#model" scale="1.2 1.2 1.2" position="0 0 -6" rotation="0 0 0"></a-entity>			
+			<a-entity gltf-model="#model" scale="1.2 1.2 1.2" position="0 0 -6" rotation="0 0 0"></a-entity>			
 		<!--<a-sky src="#sky" rotation="0 -90 0" radius='50'></a-sky>-->
 		</a-anchor>
 	<!-- Define a static camera -->
